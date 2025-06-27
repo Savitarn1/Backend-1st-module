@@ -11,6 +11,7 @@ app.use(require('./middlewares/request-time.js'));
 
 app.get('/', (req, res) => res.send('Hello World!'));
 app.use('/api/users', require('./router/user.route.js'));
+app.use('/api/auth', require('./router/auth.route.js'));
 
 (async () => {
   await connectDB();

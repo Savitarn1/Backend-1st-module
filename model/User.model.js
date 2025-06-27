@@ -21,7 +21,3 @@ const UserSchema = Schema({
     type : String
   }
 })
-
-const userModel = model('User', UserSchema);
-
-module.exports = userModel;
